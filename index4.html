@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的vue.js</title>
+	</head>	
+	<body>
+		<div id="app">
+			<button v-on:click="onClick">我是按钮</button>			
+			<p></p>			
+			<form @submit="onSubmit($event)">
+				<input type="text" />
+				<input type="submit" />
+			</form>		
+		</div>
+	</body>
+</html>
+<script src="./lib/vue.js"></script>
+<script src="./lib/index4.js"></script>

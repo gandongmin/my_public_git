@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的vue.js</title>
+	</head>	
+	<body>
+		<div id="app">
+			<div v-if="role == 'admin' "> 我是管理员 {{role}}</div>
+			<div v-else-if="role == 'general' || role == 'general2' "> 我是普通员工 {{role}} </div>
+			<div v-else > 您没有权限访问 {{role}}</div>			
+		</div>
+	</body>
+</html>
+<script src="./lib/vue.js"></script>
+<script src="./lib/index7.js"></script>

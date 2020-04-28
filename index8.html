@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的vue.js</title>
+	</head>	
+	<body>
+		<div id="app">
+			<table>
+				<tr>
+					<th>语文</th>
+					<th>数学</th>
+					<th>英语</th>
+				</tr>	
+				<tr>
+					<td><input v-model.number="yuwen" value="{{yuwen}}"/></td>
+					<td><input v-model.number="shuxue" value="{{shuxue}}"/></td>
+					<td><input v-model.number="yingyu" value="{{yingyu}}"/></td>
+				</tr>
+			</table>
+			<br />
+			<div>总分：{{sum}}</div>	
+			<br />
+			<div>平均分：{{avar}}</div>		
+		</div>
+	</body>
+</html>
+<script src="./lib/vue.js"></script>
+<script src="./lib/index8.js"></script>

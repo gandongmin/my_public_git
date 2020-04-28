@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的vue.js</title>
+	</head>
+	<style>
+		.active{
+			background-color: red;
+		}
+	</style>
+	<body>
+		<div id="app">
+			<a v-bind:href="href" :class="{active:isActive}">点这里</a>
+		</div>
+	</body>
+</html>
+<script src="./lib/vue.js"></script>
+<script src="./lib/index3.js"></script>
+
+
